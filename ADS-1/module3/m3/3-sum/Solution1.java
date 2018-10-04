@@ -13,8 +13,10 @@ public class Solution1 {
         int n = arr.length;
         Arrays.sort(arr);
         if (containsDuplicates(arr)) throw new IllegalArgumentException("array contains duplicate integers");
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i+1; j < arr.length; j++) {
+        for (int i = 0; i < n; i++) 
+        {
+            for (int j = i+1; j < n; j++) 
+            {
                 int k = Arrays.binarySearch(arr, -(arr[i] + arr[j]));
                 if (k > j) System.out.println(arr[i] + " " + arr[j] + " " + arr[k]);
             }
@@ -25,19 +27,28 @@ public class Solution1 {
 	        Arrays.sort(arr);
 	        if (containsDuplicates(arr)) throw new IllegalArgumentException("array contains duplicate integers");
 	        int count = 0;
-	        for (int i = 0; i < arr.length; i++) {
-	            for (int j = i+1; j < arr.length; j++) {
+	        for (int i = 0; i < n; i++) {
+	            for (int j = i+1; j < n; j++) {
 	                int k = Arrays.binarySearch(arr, -(arr[i] + arr[j]));
-	                if (k > j) count++;
+	                if (k > j) 
+	                {
+	                	count=count+1;
+	                }
+	                	
 	            }
 	        }
 	        return count;
 	    } 
 	 public static void main(String[] args)  
 	 { 
-	        Scanner scan = new Scanner (System.in);
-	        int[] a = {1000,-800,-200,234,435,3243,-3,2,1,12,-11,-1};
-	        
+		int n;
+	     Scanner scan = new Scanner (System.in);
+		n=scan.nextInt();
+	        int[] a = new int[n];
+	        for(int i=0;i<n;i++)
+	        {
+			a[i]=scan.nextInt();
+	        }
 	        int count = count(a);
 			System.out.print("Number of Three sum number sets are:");
 	        System.out.println("\t" + count);
