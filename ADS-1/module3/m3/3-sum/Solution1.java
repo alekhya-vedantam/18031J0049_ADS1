@@ -51,6 +51,6 @@ public class Solution1 {
 	        }
 	        int count = count(a);
 			//System.out.print("Number of Three sum number sets are:");
-	        System.out.println("\t" + count);
+	        System.out.println(count);
 	    } 
 }
