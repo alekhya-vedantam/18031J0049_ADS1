@@ -50,7 +50,7 @@ public class Solution1 {
 			a[i]=scan.nextInt();
 	        }
 	        int count = count(a);
-			System.out.print("Number of Three sum number sets are:");
+			//System.out.print("Number of Three sum number sets are:");
 	        System.out.println("\t" + count);
 	    } 
 }
