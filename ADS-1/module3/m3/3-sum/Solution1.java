@@ -3,19 +3,6 @@ import java.util.Scanner;
 
 public class Solution1 {
 
-	/*public static void printAll(int[] arr) 
-	{
-        int n = arr.length;
-        Arrays.sort(arr);
-        for (int i = 0; i < n; i++) 
-        {
-            for (int j = i+1; j < n; j++) 
-            {
-                int bin = Arrays.binarySearch(arr, -(arr[i] + arr[j]));
-                if (bin > j) System.out.println(arr[i] + " " + arr[j] + " " + arr[bin]);
-            }
-        }
-    } */
 	 public static int count(int[] arr) {
 	        int n = arr.length;
 	        Arrays.sort(arr);
