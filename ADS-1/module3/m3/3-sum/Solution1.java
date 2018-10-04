@@ -13,8 +13,8 @@ public class Solution1 {
         int n = arr.length;
         Arrays.sort(arr);
         if (containsDuplicates(arr)) throw new IllegalArgumentException("array contains duplicate integers");
-        for (int i = 0; i < n; i++) {
-            for (int j = i+1; j < n; j++) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i+1; j < arr.length; j++) {
                 int k = Arrays.binarySearch(arr, -(arr[i] + arr[j]));
                 if (k > j) System.out.println(arr[i] + " " + arr[j] + " " + arr[k]);
             }
@@ -25,8 +25,8 @@ public class Solution1 {
 	        Arrays.sort(arr);
 	        if (containsDuplicates(arr)) throw new IllegalArgumentException("array contains duplicate integers");
 	        int count = 0;
-	        for (int i = 0; i < n; i++) {
-	            for (int j = i+1; j < n; j++) {
+	        for (int i = 0; i < arr.length; i++) {
+	            for (int j = i+1; j < arr.length; j++) {
 	                int k = Arrays.binarySearch(arr, -(arr[i] + arr[j]));
 	                if (k > j) count++;
 	            }
@@ -35,12 +35,9 @@ public class Solution1 {
 	    } 
 	 public static void main(String[] args)  
 	 { 
-		 	int n;
 	        Scanner scan = new Scanner (System.in);
-	        System.out.println("Enter the size of array:");
-	        n=scan.nextInt();
-	        int[] a = new int[n];
-	        for(int i=0;i<n;i++)
+	        int[] a = new int[10000];
+	        for(int i=0;i<10000;i++)
 	        {
 	        	//System.out.println("Enter the elements:");
 	        	a[i]=scan.nextInt();
