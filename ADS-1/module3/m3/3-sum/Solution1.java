@@ -36,12 +36,8 @@ public class Solution1 {
 	 public static void main(String[] args)  
 	 { 
 	        Scanner scan = new Scanner (System.in);
-	        int[] a = new int[10000];
-	        for(int i=0;i<10000;i++)
-	        {
-	        	//System.out.println("Enter the elements:");
-	        	a[i]=scan.nextInt();
-	        }
+	        int[] a = {1000,-800,-200,234,435,3243,-3,2,1,12,-11,-1};
+	        
 	        int count = count(a);
 			System.out.print("Number of Three sum number sets are:");
 	        System.out.println("\t" + count);
