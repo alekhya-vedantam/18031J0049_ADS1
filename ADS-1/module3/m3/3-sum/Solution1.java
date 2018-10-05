@@ -12,6 +12,7 @@ public class Solution1 {
 	                int bin = Arrays.binarySearch(arr, -(arr[i] + arr[j]));
 	                if (bin > j) 
 	                {
+	                	//System.out.println(bin);
 	                	count=count+1;
 	                }
 	                	
@@ -21,9 +22,9 @@ public class Solution1 {
 	    } 
 	 public static void main(String[] args)  
 	 { 
-		int n;
-	     Scanner scan = new Scanner (System.in);
-		n=scan.nextInt();
+		 	int n;
+			Scanner scan = new Scanner (System.in);
+	     	n=scan.nextInt();
 	        int[] a = new int[n];
 	        for(int i=0;i<n;i++)
 	        {

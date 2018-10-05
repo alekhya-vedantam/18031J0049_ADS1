@@ -1,0 +1,22 @@
+Activity4:
+question:it was - the best - of times - - - it was - the - -
+word			push()			pop()		stack
+it			it					
+was			was					
+-						was		
+the			the					
+best			best					
+-						best
+of			of					
+times			times					
+-						times
+-						of
+-						the
+it			it						
+was			was					
+-						was
+the 			the				
+-						the
+-						it		it
+
+

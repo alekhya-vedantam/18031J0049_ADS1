@@ -1,0 +1,22 @@
+1)What is a linked list
+
+ANS. A linked list contains the nodes which has two parts namely data and address parts. They are linked using the address part of the node.
+
+2)Why linked list
+
+ANS. We use the linked list to aviod few complexities which are not possible to avoid in array. They are as follows:
+	1)we can parse front and previous node can be used the link provided in the address.
+	2)We use this instead of pointers.
+	3)Easy to use.
+3)Methods in linkedlist
+	Insert
+	Delete
+	removeAfter
+	insertAfter
+ANS. 1)Insert:this method is used to insert the elements
+	Syntax: first = new Node();
+     2)Delete: this method is used to delete the elements
+	Syntax:first=first.next();
+     3)removeAfter: this is used to remove after a particular node.
+   
+     4)insertAfter: this is used to insert after a particular node.

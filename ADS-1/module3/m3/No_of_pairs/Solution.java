@@ -17,10 +17,10 @@ public class Solution
 		{
 			searched[j]=0;
 		}
-		for(int i=0;i<n-1;i++)
+		for(int i=0;i<n;i++)
 		{
 			count=0;
-			for(int j=1;j<n-1;j++)
+			for(int j=1;j<n;j++)
 			{
 				if(a[i]==a[j])
 				{
