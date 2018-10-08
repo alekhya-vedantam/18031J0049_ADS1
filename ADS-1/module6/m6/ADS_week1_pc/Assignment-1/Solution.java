@@ -54,10 +54,10 @@ class AddLargeNumbers {
     			carry=sum/10;
     			sum=v1+v2+carry;
     		}
-    		else
-    		{
+    		//else
+    		//{
     			list3.add(sum);
-    		}
+    		//}
     	}
     	return list3;
 
