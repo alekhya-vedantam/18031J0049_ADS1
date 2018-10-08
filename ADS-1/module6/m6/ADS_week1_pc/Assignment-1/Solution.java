@@ -42,22 +42,16 @@ class AddLargeNumbers {
     		item2=(int) list2.get(i);
     		stack2.push(item2);
     	}
+    	carry=0;
     	for(i=0,j=0;i<stack1.size() && j<stack2.size();i++,j++)
     	{
-    		carry=0;
+    		
     		v1=stack1.pop();
     		v2=stack2.pop();
-    		sum=v1+v2;
-    		if(sum>=10)
-    		{
-    			sum=v1+v2+carry;
-    			list3.add(sum%10);
-    			carry=sum/10;
-    		}
-    		else
-    		{
-    			list3.add(sum);
-    		}
+    		sum=v1+v2+carry;
+    		list3.add(sum%10);
+    		carry=sum/10;
+    		
     	}
     	return list3;
 
