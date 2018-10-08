@@ -37,12 +37,12 @@ class AddLargeNumbers {
     		item=(int) list1.get(i);
     		stack1.push(item);
     	}
-    	for(i=0;i<=list2.size();i++)
+    	for(i=0;i<list2.size();i++)
     	{
     		item2=(int) list2.get(i);
     		stack2.push(item2);
     	}
-    	for(i=0,j=0;i<=stack1.size() && j<=stack2.size();i++,j++)
+    	for(i=0,j=0;i<stack1.size() && j<stack2.size();i++,j++)
     	{
     		carry=0;
     		v1=stack1.pop();
@@ -50,14 +50,14 @@ class AddLargeNumbers {
     		sum=v1+v2;
     		if(sum>=10)
     		{
+    			sum=v1+v2+carry;
     			list3.add(sum%10);
     			carry=sum/10;
-    			sum=v1+v2+carry;
     		}
-    		//else
-    		//{
+    		else
+    		{
     			list3.add(sum);
-    		//}
+    		}
     	}
     	return list3;
 
