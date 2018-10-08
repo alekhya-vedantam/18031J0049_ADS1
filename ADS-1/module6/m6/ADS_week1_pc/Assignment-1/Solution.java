@@ -35,11 +35,13 @@ class AddLargeNumbers {
     	for(i=0;i<=list1.size();i++)
     	{
     		item=(int) list1.get(i);
+    		
     		stack1.push(item);
     	}
     	for(i=0;i<list2.size();i++)
     	{
     		item2=(int) list2.get(i);
+    		
     		stack2.push(item2);
     	}
     	carry=0;
