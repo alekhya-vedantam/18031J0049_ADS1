@@ -1,3 +1,4 @@
+/*Alekhya-18031J0049*/
 import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Stack;
@@ -43,10 +44,10 @@ class AddLargeNumbers {
     		item2=(char) list2.get(i);
     		stack2.push((int) item2);
     	}
-    	
+    	carry=0;
     	for(i=0,j=0;i<stack1.size() && j<stack2.size();i++,j++)
     	{
-    		carry=0;
+    		
     		v1=stack1.pop();
     		v2=stack2.pop();
     		sum=v1+v2+carry;
