@@ -13,12 +13,12 @@ int []c=new int[n1+n2];
 for(i=0;i<n1;i++)
 {
 	a[i]=sc.nextInt();
-	sc.useDelimiter("[0-9]");
+	sc.useDelimiter(",");
 }
 for(i=0;i<n2;i++)
 {
 	b[i]=sc.nextInt();
-	sc.useDelimiter("[0-9]");
+	sc.useDelimiter(",");
 	}
 		
 for(i=0;k<a.length&&m<b.length;i++)
