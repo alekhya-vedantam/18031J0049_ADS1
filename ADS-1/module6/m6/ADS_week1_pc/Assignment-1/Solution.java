@@ -5,13 +5,13 @@ class AddLargeNumbers {
 
     public static LinkedList numberToDigits(String number) 
     {
-    	LinkedList<Character> list1 = new LinkedList<Character>();
+    	LinkedList<Integer> list1 = new LinkedList<Integer>();
     	int i=0;
     	char n;
     	for(i=0;i<number.length();i++)
     	{
     		n=number.charAt(i);
-    		list1.add(n);
+    		list1.add((int)n);
     		
     	}
 		return list1;
@@ -30,18 +30,18 @@ class AddLargeNumbers {
     {
     	int i,j,v1,v2,sum,carry;
     	char item,item2;
-    	Stack<Character> stack1= new Stack<Character>();
-    	Stack<Character> stack2= new Stack<Character>();
-    	LinkedList<Character> list3= new LinkedList<Character>();
+    	Stack<Integer> stack1= new Stack<Integer>();
+    	Stack<Integer> stack2= new Stack<Integer>();
+    	LinkedList<Integer> list3= new LinkedList<Integer>();
     	for(i=0;i<=list1.size();i++)
     	{
     		item=(char) list1.get(i);
-    		stack1.push((char) item);
+    		stack1.push((int) item);
     	}
     	for(i=0;i<list2.size();i++)
     	{
     		item2=(char) list2.get(i);
-    		stack2.push((char) item2);
+    		stack2.push((int) item2);
     	}
     	carry=0;
     	for(i=0,j=0;i<stack1.size() && j<stack2.size();i++,j++)
@@ -50,7 +50,7 @@ class AddLargeNumbers {
     		v1=stack1.pop();
     		v2=stack2.pop();
     		sum=v1+v2+carry;
-    		list3.add((char)(sum%10));
+    		list3.add(sum%10);
     		carry=sum/10;
     		
     	}
