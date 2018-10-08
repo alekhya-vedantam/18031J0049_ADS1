@@ -10,17 +10,17 @@ int n2=sc.nextInt();
 int []a=new int[n1];
 int []b=new int[n2];
 int []c=new int[n1+n2];
-
-
-       for(i=0;i<n1;i++)
-	    {
-	      a[i]=sc.nextInt();
-	     }
-       for(i=0;i<n2;i++)
-	    {
-	      b[i]=sc.nextInt();
-	    }
-		//System.out.println(n1+n2);
+for(i=0;i<n1;i++)
+{
+	a[i]=sc.nextInt();
+	sc.delimiter();
+}
+for(i=0;i<n2;i++)
+{
+	b[i]=sc.nextInt();
+	sc.delimiter();
+	}
+		
 for(i=0;k<a.length&&m<b.length;i++)
 	{
 	 if(a[k]>=b[m])
