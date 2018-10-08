@@ -32,7 +32,7 @@ class AddLargeNumbers {
     	char item,item2;
     	Stack<Character> stack1= new Stack<Character>();
     	Stack<Character> stack2= new Stack<Character>();
-    	LinkedList<Integer> list3= new LinkedList<Integer>();
+    	LinkedList<Character> list3= new LinkedList<Character>();
     	for(i=0;i<=list1.size();i++)
     	{
     		item=(char) list1.get(i);
@@ -50,7 +50,7 @@ class AddLargeNumbers {
     		v1=stack1.pop();
     		v2=stack2.pop();
     		sum=v1+v2+carry;
-    		list3.add(sum%10);
+    		list3.add((char)(sum%10));
     		carry=sum/10;
     		
     	}
