@@ -32,17 +32,17 @@ class AddLargeNumbers {
     	Stack<Integer> stack1= new Stack<Integer>();
     	Stack<Integer> stack2= new Stack<Integer>();
     	LinkedList<Integer> list3= new LinkedList<Integer>();
-    	for(i=0;i<list1.size();i++)
+    	for(i=0;i<=list1.size();i++)
     	{
     		item=(int) list1.get(i);
     		stack1.push(item);
     	}
-    	for(i=0;i<list2.size();i++)
+    	for(i=0;i<=list2.size();i++)
     	{
     		item2=(int) list2.get(i);
     		stack2.push(item2);
     	}
-    	for(i=0,j=0;i<stack1.size() && j<stack2.size();i++,j++)
+    	for(i=0,j=0;i<=stack1.size() && j<=stack2.size();i++,j++)
     	{
     		carry=0;
     		v1=stack1.pop();
