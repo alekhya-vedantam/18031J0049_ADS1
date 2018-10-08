@@ -5,13 +5,13 @@ class AddLargeNumbers {
 
     public static LinkedList numberToDigits(String number) 
     {
-    	LinkedList<Integer> list1 = new LinkedList<Integer>();
+    	LinkedList<Character> list1 = new LinkedList<Character>();
     	int i=0;
     	char n;
     	for(i=0;i<number.length();i++)
     	{
     		n=number.charAt(i);
-    		list1.add((int)n);
+    		list1.add((char)n);
     		
     	}
 		return list1;
