@@ -12,7 +12,7 @@ class AddLargeNumbers {
     	{
     		n=number.charAt(i);
     		list1.add(n);
-    		i++;
+    		
     	}
 		return list1;
     }
@@ -20,7 +20,7 @@ class AddLargeNumbers {
     {
     	int i=0;
     	String s="";
-    	for(i=0;i<=list.size();i++)
+    	for(i=0;i<list.size();i++)
     	{
     		s=s+list.get(i);
     	}
