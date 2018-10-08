@@ -48,7 +48,7 @@ class AddLargeNumbers {
     		v1=stack1.pop();
     		v2=stack2.pop();
     		sum=v1+v2;
-    		if(sum>9)
+    		if(sum>=10)
     		{
     			list3.add(sum%10);
     			carry=sum/10;
