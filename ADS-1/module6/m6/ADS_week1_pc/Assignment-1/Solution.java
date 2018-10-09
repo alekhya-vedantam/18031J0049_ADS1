@@ -41,7 +41,7 @@ class AddLargeNumbers {
     	}
     	for(i=0;i<list2.size();i++)
     	{
-    		item2=(char) list2.get(i);
+    		item2=list2.get(i);
     		stack2.push((int) item2);
     	}
     	carry=0;
