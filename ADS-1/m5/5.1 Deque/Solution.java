@@ -42,12 +42,16 @@ class Dequeue1
 	{
 		ll.removeLast();
 	}
-	public void print()
+	public String print()
 	{
-		for(int i=0;i<ll.size();i++)
+		String st = "["+ll.get(0);
+		for(int i=1;i<ll.size();i++)
 		{
-			System.out.println(ll.get(i));
+			st = st +", "+ll.get(i);
 		}
+		st = st + "]";
+		//System.out.println();
+		return st;
 	}
 }
 public class Solution {
@@ -60,9 +64,9 @@ public class Solution {
 		n=scan.nextInt();
 		Dequeue1 d = new Dequeue1();
 		
-		for(i=0;i<n;i++)
+		for(i=0;i<n+1;i++)
 		{
-			s=scan.next();
+			s=scan.nextLine();
 			String[] s1 = s.split(" ");
 			switch(s1[0])
 			{
@@ -74,17 +78,17 @@ public class Solution {
 							
 			case "pushLeft":	data=Integer.parseInt(s1[1]); 
 								d.pushLeft(data);
-								d.print();
+								System.out.println(d.print());
 								break;
 			case "pushRight":	data=Integer.parseInt(s1[1]);
 								d.pushRight(data);
-								d.print();
+								System.out.println(d.print());
 								break;
 			case "popLeft":		d.popLeft();
-								d.print();
+								System.out.println(d.print());
 								break;
 			case "popright":	d.popRight();
-								d.print();
+								System.out.println(d.print());
 								break;
 			}
 		}
