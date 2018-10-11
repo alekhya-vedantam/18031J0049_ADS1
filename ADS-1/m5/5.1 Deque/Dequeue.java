@@ -3,11 +3,10 @@ import java.util.Scanner;
 
 class Dequeue1 {
 	LinkedList<Integer> ll = new LinkedList<Integer>();
-
 	public void pushRight(int item) {
 		ll.add(item);
 	}
-
+	
 	public void popLeft() {
 		ll.removeFirst();
 	}
@@ -23,7 +22,7 @@ class Dequeue1 {
 	public String print() {
 
 		if (ll.isEmpty()) {
-			System.out.println("Hi");
+			//System.out.println("Hi");
 			return "[]";
 		}
 		String st = "[" + ll.get(0);
@@ -48,9 +47,9 @@ public class Dequeue {
 
 		while (scan.hasNext()) {
 			s = scan.nextLine();
-			System.out.println(s);
+			//System.out.println(s);
 			String[] s1 = s.split(" ");
-			System.out.println(s1[0]);
+			//System.out.println(s1[0]);
 			switch (s1[0]) {
 			case "isEmpty":
 				System.out.println(d.ll.isEmpty());
