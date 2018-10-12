@@ -1,0 +1,16 @@
+ACTIVITY 4:
+
+Stack stack = new Stack();
+
+while (!q.isEmpty())
+
+stack.push(q.dequeue());
+
+while (!stack.isEmpty())
+
+q.enqueue(stack.pop());
+
+ANS.
+here let us consider a data set say, 1 2 3 4 5 6 are in the queue.
+according to the code, the dequeue is done and the elements stored in the stack are: 6 5 4 3 2 1
+now again pop() method is called and again the elements are entered into the queue in the order: 6 5 4 3 2 1
