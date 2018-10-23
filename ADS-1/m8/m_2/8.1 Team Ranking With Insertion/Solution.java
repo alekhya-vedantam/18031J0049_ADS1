@@ -35,13 +35,11 @@ public class Solution{
 				for (int j = i; j > 0; j--) {
 					if (al.get(j - 1).wins < al.get(j).wins) 
 						al.add(j, al.remove(j - 1));
-					else if(al.get(j - 1).wins == al.get(j).wins) {
-						if (al.get(j - 1).losses > al.get(j).losses)
+					else if(al.get(j - 1).wins == al.get(j).wins && al.get(j - 1).losses > al.get(j).losses) 
+						al.add(j, al.remove(j - 1));
+					else if(al.get(j - 1).losses == al.get(j).losses && al.get(j - 1).draws<al.get(j).draws) 
 							al.add(j, al.remove(j - 1));
-						else if(al.get(j - 1).losses == al.get(j).losses && al.get(j - 1).draws<al.get(j).draws) {
-							al.add(j, al.remove(j - 1));
-						}
-					} else 
+					else 
 						break;
 					
 				}
