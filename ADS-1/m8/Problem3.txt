@@ -1,0 +1,4 @@
+Which method runs faster for an array with all keys identical, basic selection sort or basic insertion sort?
+ANS. From the above basic sorting algorithms we can observe that selction sort takes longer time when compared to insertion sort.
+As, we only swap the elements in selection sort for the whole array which takes longer duration of time but in the insertion sort we move the array elements by one place each time when
+the array is sorted.

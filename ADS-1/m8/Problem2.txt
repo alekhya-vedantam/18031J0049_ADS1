@@ -1,0 +1,39 @@
+--------------------------------------------------------------------ACTIVITY 6:-----------------------------------------------------------------------------
+STEP1: E A S Y Q U E S T I O N  //A is the key
+STEP2: A E S Y Q U E S T I O N  //S is the key
+STEP3: A E S Y Q U E S T I O N  //Y is the key
+STEP4: A E S Y Q U E S T I O N  //Q is the key
+STEP5: A E Q S Y U E S T I O N  //U is the key
+STEP6: A E Q S U Y E S T I O N  //E is the key
+STEP7: A E E Q S U Y S T I O N  //S is the key
+STEP8: A E E Q S S U Y T I O N  //T is the key
+STEP9: A E E Q S S T U Y I O N  //I is the key
+STEP10:A E E I Q S S T U Y O N  //O is the key
+STEP11:A E E I O Q S S T U Y N  //N is the key
+STEP12:A E E I N O Q S S T U Y	//The sorted array
+
+---------------------------------------------------------------------ACTIVITY 7:----------------------------------------------------------------------------
+public class Selection { 
+public static void sort(Comparable[] a) {
+Scanner scan = new Scanner(System.in);
+int N = scan.nextInt();    //Blank 1
+
+for (int i = 0; i < N; i++) { 
+
+Int min = a[i];    //Blank 2
+
+for (int j = i+1; j < N; j++) 
+
+if (less(a[j], a[min])) 
+
+min = a[j]; //Blank3
+
+exch(a, i, i-1);     //Blank4
+
+}
+
+ }
+
+ }
+
+--------------------------------------------------------------------ACTIVITY 8:-----------------------------------------------------------------------------
