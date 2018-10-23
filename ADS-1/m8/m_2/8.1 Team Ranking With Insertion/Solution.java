@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-class Teams implements Comparable<Teams> {
+class Teams  {
 	String Tname;
 	int wins;
 	int losses;
@@ -19,19 +19,7 @@ class Teams implements Comparable<Teams> {
 		this.draws = draws;
 	}
 
-	@Override
-	public int compareTo(Teams Ts) {
-		if (this.wins == Ts.wins) {
-			if (this.losses == Ts.losses) {
-				return Ts.draws - this.draws;
-			} else {
-				return this.losses - Ts.losses;
-			}
-		} else {
-			return Ts.wins - this.wins;
-		}
-
-	}
+	
 }
 
 public class Solution{
@@ -60,7 +48,7 @@ public class Solution{
 			}
 			
 		} while (scn.hasNext());
-		Collections.sort(al);
+	
 		// System.out.println(al);
 		String st = "" + al.get(0).Tname;
 		for (int i = 1; i < al.size(); i++) {
