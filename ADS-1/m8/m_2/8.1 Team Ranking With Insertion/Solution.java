@@ -41,7 +41,6 @@ public class Solution{
 							al.add(j, al.remove(j - 1));
 					else 
 						break;
-					
 				}
 			}
 			

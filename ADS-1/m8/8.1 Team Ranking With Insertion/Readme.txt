@@ -9,7 +9,7 @@ For example on the following data
 TeamName #Wins #Losses #Draws
 
 England 	4 	2 		3
-India 		5 	2 		4
+India 	5 	2 		4
 Australia 	6 	2 		3
 SouthAfrica 5 	3 		4
 Bangladesh 	3 	4 		2

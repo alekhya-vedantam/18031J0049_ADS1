@@ -1,0 +1,9 @@
+step1:  E A S Y Q U E S T I O N
+step2:  E A S Y Q U  E S T I O N
+step3:  E A S  Y Q U  E S T  I O N
+step4:  E A  S Y  Q U  E S  T I  O N
+step5:  E  A  S  Y  Q  U  E  S  T  I  O  N
+step6:  AE SY QU ES IT NO
+step7:  AESY EQSU INOT
+step8:  AEEQSSUY  INOT
+step9:  AEEINOQSSTUY
