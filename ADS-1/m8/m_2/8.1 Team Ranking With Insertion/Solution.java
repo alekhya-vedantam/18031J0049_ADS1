@@ -34,7 +34,7 @@ class Teams implements Comparable<Teams> {
 	}
 }
 
-public class InsertionSort1 {
+public class Solution{
 	public static void main(String args[]) {
 
 		ArrayList<Teams> al = new ArrayList<>();
