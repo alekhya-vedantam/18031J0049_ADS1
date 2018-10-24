@@ -1,0 +1,29 @@
+PART1:
+Section 1:
+ANSWERS
+
+1)N*log(N)
+
+2)Deepak is left out in the queue.
+
+3)a,d,e
+
+4)max:50%
+
+5)input			push		pop		stack		size
+  {			{						1
+  [			[						2		
+  ]					[				1
+  (			(				(		2
+  )					(		[		1
+  }					{		{		0
+
+6)log(N)
+
+7)N*N
+
+8)N*(N-1)
+
+9)N*N
+
+10)1 1 1 1 1 1 1 1 1

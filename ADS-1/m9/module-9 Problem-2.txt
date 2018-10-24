@@ -1,0 +1,12 @@
+------------------------------------------------------------------Activity 7:-------------------------------------------------------------
+Given size is 39
+so the division is done as follows
+step1: the size is 0-38 and then this is dived into two halves where l=19 r=20
+step2: then it is further divided into two halves each first list =9 and 10 each and second list 10 each
+step3: then it is further divided into two halves each first list =4 and 5 , 5 and 5 and the second list 5 each
+step4: then it is further divided into two halves each first list= 2 each and 2,3 and 2,3 and the second list 2,3 each
+step5: then it is further divided into two halves each first list= 1 each and 1,1 and 1,1 and the second list 1,1 each
+
+Now merging is done.
+step1: the individual elements are compared and merged into pairs with size 2
+step2: 
