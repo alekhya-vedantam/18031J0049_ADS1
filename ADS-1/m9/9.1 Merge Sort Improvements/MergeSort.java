@@ -80,10 +80,10 @@ public class MergeSort {
     { 
         int arr[] = {12, 11, 13, 5, 6, 7,2,51}; 
         MergeSort m=new MergeSort();
-        System.out.println("Given Array"); 
+         
         printArray(arr); 
         m.sort(arr, 0, arr.length-1); 
-        System.out.println("\nSorted array"); 
+        
         printArray(arr); 
     } 
 }
