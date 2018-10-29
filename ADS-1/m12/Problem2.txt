@@ -1,0 +1,4 @@
+Is an array that is sorted in Ascending order a min-oriented heap? Why?
+Ans. yes, in a way as the parent index is i and the left child index is 2i, right index vali=ue is 2i+1. As, i is greater 
+therefore index of left and right child is greater thus children are always greater than parent node. If the values are equal,
+then the first entered value is considered.
