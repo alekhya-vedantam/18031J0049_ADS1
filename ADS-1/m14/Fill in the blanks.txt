@@ -1,0 +1,67 @@
+Build a max heap with following elements(use the same insertion order) and answer the following questions 
+
+100,  20, 3, 101, 54, 96, 103, 71, 60
+
+Number of heapify operations  required to build a max heap.
+ 
+	6 operations maximum
+
+      2)  Leaf elements after performing 2nd heapify operation(Right to left).
+
+	ANS.71,20,54,96,103
+
+      3) Leaf elements after inserting all elements into max heap(First child to last child).
+
+	ANS. 60,20,54,96,3
+
+      4) Elements at level 1 after building a heap. (Left to right)
+
+	ANS. 101,54,96,103
+
+      5) Children of 101 after building a heap.(Left to right)
+
+	ANS. 71,60
+
+      6)  Elements at level 1 after sorting 3 elements. (Left to right)
+	ANS.71,54,96,103
+
+Learning by doing-1
+Suppose that your application will have a huge number of insert operations, but only a few remove the maximum operations.
+Which priority-queue implementation do you think would be most effective: heap, unordered array, ordered array?
+Answer the above problem in a file name problem-1.txt and add it to the folder ADS-1-practice/m14
+
+Push the respository to GitHub when your answer is done
+Enter the git commit ID in the blank below
+Do not use eval to submit this activity
+
+ANS.Heap is the most effective to do maximum insertions and less deletions as ordered and unordered arrays needs traversal from the
+beggining index value to the last. So they are less efficiant compared to heap.
+
+Learning by doing-2
+Draw all of the different heaps that can be made from the five keys A B C D E, then draw all of the different heaps that can be
+made from the five keys A A A B B.
+Answer the above problem in a file name problem-2.txt and add it to the folder ADS-1-practice/m14
+Push the respository to GitHub when your answer is done
+Enter the git commit ID in the blank below
+Do not use eval to submit this activity
+
+ANS. A B C D E(MAX heap Bottom-up)
+     E D C A B
+     A A A B B(MAX heap Bottom-up)
+     B B A A A
+     B A C D E(MAX heap top down)
+     E D B A C
+     A B A B A(MAX heap top-down
+     B B A A A
+     A B C D E(MIN heap Bottom up)
+     A B C D E
+     A A A B B(MIN heap top-down)
+     A A A B B 
+     B A E D C(MIN heap bottom-up)
+     A B E D C
+     E D C B A(MIN heap Bottom-up)
+     A B C E D
+     A E B D C(MIN heap Top-up)
+     A C B E D
+     A D E B C(MAX heap Bottom-up)
+     E C D A B
